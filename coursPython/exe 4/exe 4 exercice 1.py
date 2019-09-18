@@ -13,13 +13,15 @@ def main():
     valeur = input("Valeur : ")
     valeur = float(valeur)
     if valeur % 2 !=0: #detection de impaire
-        while valeur == 1 :
-            valeur = valeur/3
-            if valeur <1 :
-                print("inf à 1")
-            else:
-                print("ok")
-        #print("impair")
+        if valeur %3 ==0:
+            print("impaire & multiple de 3")
+        elif valeur %3 !=0:
+            print("impaire & pas un multiple de 3")
+    elif valeur %2 == 0:
+        if valeur %3 ==0:
+            print("paire & multiple de 3")
+        elif valeur %3 !=0:
+            print("impaire & pas un multiple de 3")
 pass
 
 if __name__ == '__main__':
