@@ -30,21 +30,20 @@ unsigned char segments[10]={64,121,36,48,25,18,2,120,0,16};
 
 void main()
 {
-
-    // Appel des fonctions initialisation des entr�es sorties de la liaison s�rie et du CAN
+	// Appel des fonctions initialisation des entr�es sorties de la liaison s�rie et du CAN
 	init_ES();
-    init_serie();
-    init_a2d();
+  init_serie();
+  init_a2d();
 
-     while(1)
-  	{
-      temperature = read_a2d(0);
-      unite = temperature % 10;
-      dizaine = (temperature / 10) % 10;
-      centaine = (temperature / 100 ) % 10;
-      PORTD=segments[dizaine];
-      PORTB=segments[unite];
-			}
+  while(1)
+  {
+    temperature = read_a2d(0);
+    unite = temperature % 10;
+    dizaine = (temperature / 10) % 10;
+    centaine = (temperature / 100 ) % 10;
+    PORTD=segments[dizaine];
+    PORTB=segments[unite];
+	}
 }
 
 
@@ -54,8 +53,8 @@ void main()
 void init_ES(void)
 {
 	TRISD=0x00; // Configuratio PORTD en sortie
-    TRISA0=1;
-    ANS0=1;
+  TRISA0=1;
+  ANS0=1;
 	TRISC6=0;
 }
 
@@ -74,7 +73,7 @@ unsigned int read_a2d(unsigned char channel){
 	channel&=0x0F;	// truncate channel to 4 bits
 	ADCON0&=0xC3;	// clear current channel select
 	ADCON0|=(channel<<2);	// apply the new channel select
-    GO=1;	// initiate conversion on the selected channel
+  GO=1;	// initiate conversion on the selected channel
 	while(GO)continue;
 	return(256*ADRESH + ADRESL);	// return 8 MSB of the result
 }
@@ -82,30 +81,28 @@ unsigned int read_a2d(unsigned char channel){
 // Initialisation de la liaison s�rie du PIC 16F887
 void init_serie(void)
 {
-    SPBRG = 25;       // 9600 bauds pour un quartz de 4 MHz
-    TXSTA = 0b00100100; //transmit enable, async, high speed mode
-    RCSTA = 0b10000000; //serial port enable
-    // Validation de l'�mission et de la r�ception de la liaison s�rie du PIC 16F887
-    TXEN=1;
-    BRGH=1;
-    SPEN=1;
-    CREN=1;
-
-
+  SPBRG = 25;       // 9600 bauds pour un quartz de 4 MHz
+  TXSTA = 0b00100100; //transmit enable, async, high speed mode
+  RCSTA = 0b10000000; //serial port enable
+  // Validation de l'�mission et de la r�ception de la liaison s�rie du PIC 16F887
+  TXEN=1;
+  BRGH=1;
+  SPEN=1;
+  CREN=1;
 }
 
 // Ecriture d'un caract�re
 void putch(char data)
 {
-    while(!TRMT);  // Attente buffer vide
-    TXREG = data;  // envoi caract�re
+  while(!TRMT);  // Attente buffer vide
+  TXREG = data;  // envoi caract�re
 }
 
 // lecture d'un caract�re
 char getch()
 {
-    while(!RCIF);  // Attente arriv�e caract�re
-    return RCREG;  // Renvoi du caract�re re�u
+  while(!RCIF);  // Attente arriv�e caract�re
+  return RCREG;  // Renvoi du caract�re re�u
 }
 
 // saisie d'une cha�ne de caract�res termin� par CR
@@ -113,10 +110,9 @@ void getString(char *input, unsigned int length)
 {
     for(int i=0;i<length;i++)    // Lecture d'une cha�ne de cat�res de longueur length
     {
-        input[i] = getch();        //acquire each character until lenght chars are received
-        if(input[i]==13)  break;   //or if newline is received
-
+      input[i] = getch();        //acquire each character until lenght chars are received
+      if(input[i]==13)  break;   //or if newline is received
     }
 
-    printf("Il est : %.10s\r",input);                        //print input string
+  printf("Il est : %.10s\r",input);                        //print input string
 }
