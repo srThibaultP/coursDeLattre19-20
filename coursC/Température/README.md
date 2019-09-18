@@ -4,3 +4,5 @@ Used : TTL-232R cable, LM35 sensor
 11/09/19
 - Prog1.c use LED from Chenillard
 - Prog2.c use serial monitor
+
+Terminal used : https://sites.google.com/site/terminalbpp/
