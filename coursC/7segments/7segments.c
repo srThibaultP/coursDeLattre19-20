@@ -38,13 +38,21 @@ void main()
      while(1)
   	{
       temperature = read_a2d(0);
+      temperature = temperature / 2.046;
       unite = temperature % 10;
       dizaine = (temperature / 10) % 10;
       centaine = (temperature / 100 ) % 10;
-      //RD7=centaine;
+      	   if (centaine > 0)
+	   {
+	      RD7 = 1;
+	   }
+	   else
+	   {
+	      RD7 = 0;
+	   }
       PORTD=segments[dizaine];
       PORTB=segments[unite];
-			}
+   }
 }
 
 
