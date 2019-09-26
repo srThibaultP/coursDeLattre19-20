@@ -1,3 +1,3 @@
-# coursShell TP Architecture PC
+# coursShell TP shell
 
 26/09/19
