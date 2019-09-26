@@ -1,3 +1,2 @@
-.workspace
-.pdsbak
-.pdsprj
+*.pdsbak
+*.workspace
