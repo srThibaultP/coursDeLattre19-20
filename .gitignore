@@ -1,2 +1,6 @@
+#Proteus save files
 *.pdsbak
 *.workspace
+
+#LibreOffice temp files
+*.odt#
