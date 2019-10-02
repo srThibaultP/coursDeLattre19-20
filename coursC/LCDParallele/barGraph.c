@@ -26,9 +26,8 @@ void init_serie(void);
 char getch(void);
 void putch(char );
 
-float temperature=0;
+float temperature, barGraph, j=0;
 char s[20];
-int i=0;
 
 int main()
 {
@@ -56,17 +55,13 @@ int main()
     sprintf(s, "T = %.2f %cC", temperature,223);    // sprintf  écrit dans le tableau s (de 20 caractères) les caractères contenus dans temperature
     Lcd_Set_Cursor(1,1);        // positionnement du curseur du LCD sur ligne 1, colonne 1
     Lcd_Write_String(s);        // Envoi de la chaîne de caractères représentant la température sur l'afficheur LCD
-    if(i != 5)
-    {
-      Lcd_Shift_Right();
-      i=+1;
-      __delay_ms(100);
+    barGraph=temperature/7.5;
+    while (j<barGraph) {
+      Lcd_Set_Cursor(2,j);
+      Lcd_Write_Char(255);
+      j++;
     }
-    else
-    {
-      i=0;
-    }
-
+    __delay_ms(500);
     // -------------------------------------------------------------------------------------
 
 
