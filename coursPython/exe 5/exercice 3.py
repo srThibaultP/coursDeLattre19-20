@@ -9,13 +9,15 @@
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 
-def surfCercle(R):
-    R = int(3.14*R*R)
-    print(R)
+def volBoite(x1,x2,x3):
+    x1 = int(x1*x2*x3)
+    print(x1)
 
 def main():
-    R = int(input("Surface du cercle : "))
-    surfCercle(R)
+    x1 = int(input("Longueur : "))
+    x2 = int(input("Largeur : "))
+    x3 = int(input("Hauteur : "))
+    volBoite(x1,x2,x3)
     pass
 
 if __name__ == '__main__':
