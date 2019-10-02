@@ -28,6 +28,7 @@ void putch(char );
 
 float temperature=0;
 char s[20];
+float i=0;
 
 int main()
 {
@@ -52,14 +53,16 @@ int main()
 
 	// ----------------Affichage sur écran LCD  -------------------------------------------
 
-    sprintf(s, "T = %.2f %cC", temperature,223);    // sprintf  écrit dans le tableau s (de 20 caractères) les caractères contenus dans temperature
+    //sprintf(s, "T = %.2f %cC", temperature,223);    // sprintf  écrit dans le tableau s (de 20 caractères) les caractères contenus dans temperature
     //Lcd_Set_Cursor(1,1);        // positionnement du curseur du LCD sur ligne 1, colonne 1
-    Lcd_Write_String(s);        // Envoi de la chaîne de caractères représentant la température sur l'afficheur LCD
+    //Lcd_Write_String(s);        // Envoi de la chaîne de caractères représentant la température sur l'afficheur LCD
 
     // -------------------------------------------------------------------------------------
 
 while (i != 10) {
+  sprintf(s, "T = %.2f %cC", temperature,223);
   Lcd_Set_Cursor(1+i,1);
+  Lcd_Write_String(s);
   i=+1;
   __delay_ms(1000);
 }
