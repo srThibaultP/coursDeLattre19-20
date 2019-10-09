@@ -16,7 +16,7 @@ def testPorteeVariable():
     b=10 	# variable globale à la fonction
     print(b)
     c=66
-    print(b)
+    print(c)
     a=44
     print(a)
     print(b)
