@@ -1,19 +1,23 @@
 from turtle import *
 
-def triangle(a):
-        right(60)
-        forward(a)
-        left(120)
-        forward(a)
-        left(120)
-        forward(a*2)
-        right(120)
+def ligne():
+    forward(100)
+
+def triangle() :
+
+    for i in range (1):
+            right(120)
+            forward(50)
+
 
 def main():
-    b = int(input("Nombre de triangle (10 max) : "))
-    a = int(input("Longueur du triangle : "))
-    for i in range(b):
-        triangle(a)
+    for l in range (3): #nb de triangle
+        for i in range (3) :
+            triangle()
+        for j in range (1) :
+            ligne()
+
+
     pass
 
 if __name__ == '__main__':
