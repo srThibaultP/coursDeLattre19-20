@@ -39,26 +39,22 @@ printf("Valeurs disponibles : 1,2,3,4\r\n");
       temperature = read_a2d(1);
       temperature = temperature/2.046;
       serialM = getch();
-      if (temperature < 17 || serialM == '1') {
+      if (serialM == '1') {
         RC0 = 1;
-	 printf("LEDR/chauffage on\r\n");
       }
-         if (temperature >= 20 || serialM == '2') {
-        RC0 = 0;
-	 	 printf("LEDR/chauffage off\r\n");
-      }
-            if (temperature > 25 || serialM == '3') {
+            if (serialM == '2') {
         RC1 = 1;
-	 	 printf("LEDB/clim on\r\n");
       }
 
-      if (temperature <= 22 || serialM == '4') {
-        RC1 = 0;
-	 	 printf("LEDB/clim off\r\n");
+      if (serialM == '3'){
+	 RC2 = 1;
+      }
+      if (serialM == '4'){
+	 RC0 =0;
+	 RC1 =0;
+	 RC2 =0;
       }
       printf("T = %.2f %cC\r\n", temperature,248);    // Envoi vers le Terminal de la valeur de la temp?rature
-//printf("%s\n",serialM );
-      __delay_ms(1000);
 	}
 }
 
@@ -72,7 +68,6 @@ void init_ES(void)
 	TRISD=0x00; // Configuratio PORTD en sortie
     TRISA1=1;
     ANS1=1;
-   PORTC=0;
    TRISC=0;
 	TRISC0=0;
    TRISC1=0;

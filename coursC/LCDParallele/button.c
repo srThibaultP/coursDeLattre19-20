@@ -26,7 +26,7 @@ void init_serie(void);
 char getch(void);
 void putch(char );
 
-float temperature=0;
+float temperature, barGraph, j=0;
 char s[20];
 
 int main()
@@ -48,17 +48,27 @@ int main()
     //Calcul Temperature
     temperature = read_a2d(2);
     temperature = temperature/2.046;  // A compléter : voir TPS précédents
-	  printf("T = %.2f %cC\r\n", temperature,248);  // Affichage température sur Terminal
+    j=0;
+    printf("T = %.2f %cC\r\n", temperature,248);  // Affichage température sur Terminal
 
 	// ----------------Affichage sur écran LCD  -------------------------------------------
-
-    sprintf(s, "T = %.2f %cC", temperature,223);    // sprintf  écrit dans le tableau s (de 20 caractères) les caractères contenus dans temperature
+    Lcd_Clear();
     Lcd_Set_Cursor(1,1);        // positionnement du curseur du LCD sur ligne 1, colonne 1
+    sprintf(s, "T = %.2f %cC", temperature,223);    // sprintf  écrit dans le tableau s (de 20 caractères) les caractères contenus dans temperature
     Lcd_Write_String(s);        // Envoi de la chaîne de caractères représentant la température sur l'afficheur LCD
 
+    barGraph=temperature/7.5;
+    while (j<barGraph) {
+      Lcd_Set_Cursor(2,j);
+      Lcd_Write_Char(255);
+      j++;
+    }
+    __delay_ms(500);
     // -------------------------------------------------------------------------------------
-    if (RB2 == 1) {
-      
+    if (RC0 == 0) {
+      Lcd_Clear();
+      //j=0;
+      __delay_ms(2000);
     }
 
 
