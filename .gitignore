@@ -4,3 +4,6 @@
 
 #LibreOffice temp files
 *.odt#
+
+#Python cache files
+*__pycache__
