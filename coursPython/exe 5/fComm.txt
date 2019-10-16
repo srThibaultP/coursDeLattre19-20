@@ -2,3 +2,9 @@
 #c'est un
 #commentaire
 #pour python
+
+et la
+sa doit
+sauvegarder
+le
+texte

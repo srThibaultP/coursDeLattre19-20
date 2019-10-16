@@ -1,23 +1,18 @@
-def filtreCommentaire():
-    fsource=open("fComm.txt", "r")
-    fdest=open("fNv.txt", "w")
+def filtreCommentaire(fichierAfiltrer, fichierFiltre):
+    fsource = open(fichierAfiltrer, 'r')
+    fdest = open(fichierFiltre, 'a')
     while 1:
-        modif=fsource.readlines()
-        print(modif)
+        modif = fsource.readline()
         if modif == '':
-            print("uno")
-            print(modif)
             break
-        if modif[0] != "#":
-            print("dos")
+        if modif [0] != "#":
             fdest.write(modif)
-            print(modif)
     fsource.close()
     fdest.close()
 
 
 def main():
-    filtreCommentaire()
+    filtreCommentaire('fComm.txt', 'fNv.txt')
     pass
 
 if __name__ == '__main__':
