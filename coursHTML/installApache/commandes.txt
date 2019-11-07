@@ -27,8 +27,8 @@ DocumentRoot /var/www/btssn1-22
 sudo a2ensite btssn1-22.conf
 sudo systemctl restart apache2
 
-Aller dans le fichier host :
+Aller dans le fichier hosts :
 etc/
-Dans le fichier "host" :
+Dans le fichier "hosts" :
 Ajouter la ligne :
 127.0.0.1 btssn1-22.org
