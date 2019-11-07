@@ -13,13 +13,16 @@ Dans un terminal :
 cd/var/www
 sudo mkdir btssn1-22
 sudo chmod 777 btssn1-22
+
 -> Insérer un fichier index.html
 cd /etc/apache2/sites-available
 sudo cp 000-default.conf btssn1-22.conf
+
 -> Dans le fichier :
 ServerAdmin webmaster@btssn1-22.org
 ServerName btssn1-22.org
 ServerAlias www.btssn1-22.org
 DocumentRoot /var/www/btssn1-22
+
 sudo a2ensite btssn1-22.conf
 sudo systemctl restart apache2
