@@ -1,0 +1,7 @@
+D:\PROGRAMATION\coursDeLattre19-20\coursC#\consoleSerie\Logiciel communication\Logiciel communication\bin\Debug\Logiciel communication.exe
+D:\PROGRAMATION\coursDeLattre19-20\coursC#\consoleSerie\Logiciel communication\Logiciel communication\bin\Debug\Logiciel communication.pdb
+D:\PROGRAMATION\coursDeLattre19-20\coursC#\consoleSerie\Logiciel communication\Logiciel communication\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+D:\PROGRAMATION\coursDeLattre19-20\coursC#\consoleSerie\Logiciel communication\Logiciel communication\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\PROGRAMATION\coursDeLattre19-20\coursC#\consoleSerie\Logiciel communication\Logiciel communication\obj\x86\Debug\Logiciel communication.csproj.GenerateResource.Cache
+D:\PROGRAMATION\coursDeLattre19-20\coursC#\consoleSerie\Logiciel communication\Logiciel communication\obj\x86\Debug\Logiciel communication.exe
+D:\PROGRAMATION\coursDeLattre19-20\coursC#\consoleSerie\Logiciel communication\Logiciel communication\obj\x86\Debug\Logiciel communication.pdb
