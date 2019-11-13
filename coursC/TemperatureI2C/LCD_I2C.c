@@ -43,11 +43,14 @@ while(SSPCON2bits.PEN!=0);
 return ;
 }
 
-void Ecrire_CAR_I2c_LCD(unsigned char adresse,char car)
+void Ecrire_CAR_I2c_LCD(unsigned char adresse,char REG_COMMAND,char car)
 {
 SSPCON2bits.SEN = 1; //Start
 while(SSPCON2bits.SEN!=0);
 SSPBUF = adresse; //Adresse
+valid_I2C();
+
+SSPBUF =REG_COMMAND; 
 valid_I2C();
 
 SSPBUF = car; 
