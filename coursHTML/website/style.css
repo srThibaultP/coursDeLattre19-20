@@ -1,0 +1,34 @@
+@font-face {
+  font-family: oswald; src: url('fonts/Oswald-Regular.ttf');
+}
+
+* {
+  font-family: oswald;
+  background-image: url("img/bgsaoexchronicle.jpg");
+}
+
+.nomTP {
+  color: rgb(63, 170, 208);
+  font-size: 150%;
+}
+
+a {
+  color: darkmagenta;
+  font-size: 200%;
+  text-decoration: none;
+}
+
+h1 {
+  color: rgb(64, 219, 253);
+  text-align: center;
+  font-size: 400%;
+}
+
+h4 {
+  color: white;
+  text-align: right;
+}
+
+li {
+  color: rebeccapurple;
+}
