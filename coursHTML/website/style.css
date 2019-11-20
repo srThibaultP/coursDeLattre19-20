@@ -1,10 +1,11 @@
 @font-face {
-  font-family: oswald; src: url('fonts/Oswald-Regular.ttf');
+  font-family: 'oswald';
+  src: url('fonts/Oswald-Regular.ttf?') format('truetype');
 }
 
-* {
-  font-family: oswald;
+body {
   background-image: url("img/bgsaoexchronicle.jpg");
+  font-family: oswald;
 }
 
 .nomTP {
@@ -20,8 +21,8 @@ a {
 
 h1 {
   color: rgb(64, 219, 253);
-  text-align: center;
   font-size: 400%;
+  text-align: center;
 }
 
 h4 {
