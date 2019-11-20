@@ -1,0 +1,39 @@
+body {
+  background: darkkhaki;
+}
+
+header {
+  text-align: center;
+}
+
+nav {
+  background: azure;
+  border: 3px solid orange;
+  margin-bottom: inherit;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+footer {
+  background: aliceblue;
+  border: 3px solid yellow;
+  margin-top: inherit;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+aside {
+  border: 2px solid blue;
+  box-sizing: border-box;
+  margin: 1px;
+  padding: 50px;
+  width: 300px;
+}
+
+section {
+  background: cadetblue;
+  border: 3px solid cornflowerblue;
+  margin-left: 18%;
+  padding-bottom: 500px;
+  position: relative;
+}
