@@ -5,3 +5,4 @@ D:\PROGRAMATION\coursDeLattre19-20\coursC#\consoleSerie\Logiciel communication\L
 D:\PROGRAMATION\coursDeLattre19-20\coursC#\consoleSerie\Logiciel communication\Logiciel communication\obj\x86\Debug\Logiciel communication.csproj.GenerateResource.Cache
 D:\PROGRAMATION\coursDeLattre19-20\coursC#\consoleSerie\Logiciel communication\Logiciel communication\obj\x86\Debug\Logiciel communication.exe
 D:\PROGRAMATION\coursDeLattre19-20\coursC#\consoleSerie\Logiciel communication\Logiciel communication\obj\x86\Debug\Logiciel communication.pdb
+D:\PROGRAMATION\coursDeLattre19-20\coursC#\consoleSerie\Logiciel communication\Logiciel communication\obj\x86\Debug\Logiciel communication.csprojResolveAssemblyReference.cache
