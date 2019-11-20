@@ -59,7 +59,7 @@ namespace WindowsFormsApplication1
 
         private void button3_Click(object sender, EventArgs e)
         {
-            serialPort1.Close();
+            //serialPort1.Close();
             Close();
         }
 
