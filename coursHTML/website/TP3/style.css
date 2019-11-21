@@ -1,41 +1,65 @@
 body {
-  background: darkkhaki;
+  background-image: url("bg.jpg");
+  font-family: cursive;
+  text-align: center;
 }
 
-header {
-  text-align: center;
+header{
+  border: 3px solid orange;
+  border-radius: 10px;
+  margin-bottom: inherit;
 }
 
 nav {
   background: azure;
-  border: 3px solid orange;
+  border: 3px solid red;
+  border-radius: 10px;
+  font-size: 20px;
   margin-bottom: inherit;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   text-align: center;
 }
 
 footer {
   background: aliceblue;
   border: 3px solid yellow;
+  border-radius: 10px;
+  font-size: 20px;
   margin-top: inherit;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   text-align: center;
 }
 
 aside {
-  background:ghostwhite;
-  border: 2px solid blue;
+  background: ghostwhite;
+  border: 3px solid blue;
+  border-radius: 10px;
   box-sizing: border-box;
-  height: 500px;
-  padding: 50px;
+  height: 700px;
   width: 300px;
 }
 
 section {
   background: cadetblue;
-  border: 2px solid cornflowerblue;
+  border: 3px solid cornflowerblue;
+  border-radius: 10px;
   box-sizing: border-box;
+  height: 700px;
   margin-left: 350px;
-  margin-top: -500px;
-  height: 500px;
+  margin-right: 10%;
+  margin-top: -700px;
+}
+
+a {
+  color: inherit;
+  padding-right: 15px;
+  text-decoration: none;
+}
+
+iframe{
+  border: inherit;
+  height: 90%;
+  width: 99%;
 }
