@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'odibee';
+  src: url('OdibeeSans-Regular.ttf') format('truetype');
+}
+
+html {
+  background: linear-gradient(90deg, rgba(19, 16, 71, 0.3925945378151261) 0%, rgba(60, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+  color: antiquewhite;
+  font-family: 'odibee';
+}
+
+.contact {
+  background: cornflowerblue;
+  border: 3px solid lightseagreen;
+  border-radius: 10px;
+  margin-right: 89%;
+}
+
+p {
+  margin: 5px;
+}
+
+.titre {
+  font-size: 30px;
+  letter-spacing: .2rem;
+  margin-top: -5%;
+}
+
+h2 {
+  background-color: #A6145D;
+  color: white;
+  font-size: 22px;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 100px;
+  position: relative;
+  text-shadow: 7px rgba(0, 0, 0, 0.3);
+  width: 400px;
+}
+
+h2::before {
+  border-color: #780e43 transparent transparent transparent;
+  border-style: solid;
+  border-width: 40px 40px 0 0;
+  content: "";
+  height: 0;
+  left: 100%;
+  position: absolute;
+  top: 0;
+  width: 8px;
+}
+
+h2::after {
+  border-color: #a6145d transparent transparent transparent;
+  border-style: solid;
+  border-width: 40px 40px 0 0;
+  content: "";
+  height: 0;
+  left: 100%;
+  position: absolute;
+  top: 0;
+  width: 0;
+  z-index: 2;
+}
+
+section {
+  
+}
