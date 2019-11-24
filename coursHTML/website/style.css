@@ -1,3 +1,7 @@
+html {
+  color: white;
+}
+
 @font-face {
   font-family: 'oswald';
   src: url('fonts/Oswald-Regular.ttf?') format('truetype');
