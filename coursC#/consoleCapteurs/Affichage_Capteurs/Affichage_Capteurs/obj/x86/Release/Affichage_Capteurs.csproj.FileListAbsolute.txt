@@ -5,3 +5,4 @@ D:\PROGRAMATION\coursDeLattre19-20\coursC#\consoleCapteurs\Affichage_Capteurs\Af
 D:\PROGRAMATION\coursDeLattre19-20\coursC#\consoleCapteurs\Affichage_Capteurs\Affichage_Capteurs\obj\x86\Release\Affichage_Capteurs.csproj.GenerateResource.Cache
 D:\PROGRAMATION\coursDeLattre19-20\coursC#\consoleCapteurs\Affichage_Capteurs\Affichage_Capteurs\obj\x86\Release\Affichage_Capteurs.exe
 D:\PROGRAMATION\coursDeLattre19-20\coursC#\consoleCapteurs\Affichage_Capteurs\Affichage_Capteurs\obj\x86\Release\Affichage_Capteurs.pdb
+D:\PROGRAMATION\coursDeLattre19-20\coursC#\consoleCapteurs\Affichage_Capteurs\Affichage_Capteurs\obj\x86\Release\Affichage_Capteurs.csprojAssemblyReference.cache
