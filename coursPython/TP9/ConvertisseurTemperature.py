@@ -11,15 +11,15 @@ def conversion(arg=None):                                                       
         if ligne == (0,):                                                       # sendResult: envoie le resultat de la conversion
             return sendResult(str(round(tempCelVERSFahrenheit(valeur), 2)) + "°F")# *str: Convertis le float en string (texte en fr)
         elif ligne == (1,):                                                     # Permet aussi d'ajouter du texte (°X)*
-            return sendResult(str(round(tempCelVERSKelvin(valeur), 2)) + "°C")  # round: arrondi (ici 2)
+            return sendResult(str(round(tempCelVERSKelvin(valeur), 2)) + "°K")  # round: arrondi (ici 2)
         elif ligne == (2,):                                                     # tempXVERSY: appel de la définition choisi
-            return sendResult(str(round(tempKelVERSFahrenheit(valeur), 2)) + "°K")
+            return sendResult(str(round(tempKelVERSFahrenheit(valeur), 2)) + "°F")
         elif ligne == (3,):
-            return sendResult(str(round(tempKelVERSCelsius(valeur), 2)) + "°K")
+            return sendResult(str(round(tempKelVERSCelsius(valeur), 2)) + "°C")
         elif ligne == (4,):
-            return sendResult(str(round(tempFahVERSKelvin(valeur), 2)) + "°F")
+            return sendResult(str(round(tempFahVERSKelvin(valeur), 2)) + "°K")
         elif ligne == (5,):
-            return sendResult(str(round(tempFahVERSCelsius(valeur), 2)) + "°F")
+            return sendResult(str(round(tempFahVERSCelsius(valeur), 2)) + "°C")
         else:
             return sendResult("Vous n'avez pas choisi de conversion")           # Préviens en cas de non selection
     except:
