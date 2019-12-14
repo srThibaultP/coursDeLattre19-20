@@ -57,16 +57,16 @@ def selection(event):                                                           
 
 fen1 = Tk()
 fen1.title("Convertisseur Température °C/°F/°K")
-fen1.geometry("400x150+750+300")
+fen1.geometry("400x175+750+300")
 
 labelEntree = Label(fen1, text="Valeur temp", fg="blue")
-labelEntree.grid(row=0, column=0, padx=5, pady=5)
+labelEntree.grid(row=0, column=0)
 
 entree = Entry(fen1,)
 entree.bind("<Return>", conversion)
-entree.grid(row=0, column=1, padx=5, pady=5)
+entree.grid(row=0, column=1)
 
-listTemp = Listbox(fen1, height=5, width=7, bg="lightblue", fg="yellow", selectmode=SINGLE)
+listTemp = Listbox(fen1, height=6, width=7, bg="lightblue", fg="yellow", selectmode=SINGLE)
 for listeComplete in ["°C->°F", "°C->°K", "°K->°F", "°K->°C", "°F->°K", "°F->°C"]:# Liste des conversions
     listTemp.insert(END, listeComplete)
 listTemp.grid(row=0, column=2, padx=5, pady=5)
