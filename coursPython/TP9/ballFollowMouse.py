@@ -6,7 +6,7 @@ fen1 = Tk()
 fen1.title("Exercice d'animation avec tkinter")
 can1 = Canvas(fen1,bg='dark grey',height=300,width=300)
 oval1 = can1.create_oval(x1,y1,x1+30,y1+30,width=2,fill='red')
-
+click = Label(fen1)
 
 # procÃ©dure gÃ©nÃ©rale de dÃ©placement :
 
