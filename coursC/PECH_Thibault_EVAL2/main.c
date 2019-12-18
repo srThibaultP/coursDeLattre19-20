@@ -58,7 +58,8 @@ void main()
         printf("T=%.2f\r\n",((TempMSB<<8 | TempLSB)>>3)*0.0625);
         __delay_ms(100);
 			}
-
+      else if (serialA == 'q' || serialA == 'Q' || serialB == 'q' || serialB == 'Q'){
+      break;}
 	}
 }
 
@@ -78,9 +79,10 @@ void init_ES(void)
     ANSELH=0;
 
 
+
+    TRISC3=0;
+    TRISC4=0;
     TRISC0=1;
-    TRISC4=1;
-    TRISC3=1;
     TRISD0=0;
 }
 
