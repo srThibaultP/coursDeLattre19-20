@@ -1,6 +1,7 @@
 
 #include <xc.h>
 #include <stdio.h>
+#include <stdlib.h>
 // BEGIN CONFIG
 #pragma config FOSC = HS // Oscillator Selection bits (HS oscillator)
 #pragma config WDTE = OFF // Watchdog Timer Enable bit (WDT enabled)
@@ -13,6 +14,8 @@
 //END CONFIG
 
 #define _XTAL_FREQ 4000000
+#define nokia_SCLK  RC3
+#define nokia_SDO   RC5
 
 // prototypes des fonctions
 void init_a2d(void);
@@ -49,8 +52,11 @@ void main()
 				printf("T = %.2f %cC\r\n", T,248);    // Envoi vers le Terminal de la valeur de la temp�rature
 				__delay_ms(100);
 			} else if (serialA == 'T' || serialB == 'C') {
-				printf("no\r\n");
-
+        printf("avt");
+				lecture_spi(0xAA);
+        printf("apres");
+        printf("T=%.2f\r\n",((TempMSB<<8 | TempLSB)>>3)*0.0625);
+        __delay_ms(100);
 			}
 
 	}
@@ -63,6 +69,7 @@ void main()
 void init_ES(void)
 {
 	TRISD=0x00; // Configuratio PORTD en sortie
+
     TRISA0=1;
     ANS0=1;
 	TRISC6=0;
@@ -71,7 +78,9 @@ void init_ES(void)
     ANSELH=0;
 
 
-    TRISC=0b00010000;
+    TRISC0=1;
+    TRISC4=1;
+    TRISC3=1;
     TRISD0=0;
 }
 
