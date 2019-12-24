@@ -27,6 +27,12 @@
     <li><a href="TP3/index.html">Page d'accueil</a></li>
     <li><a href="TP3/cvcss.html">Ajout du CSS dans le CV</a></li>
   </ul>
+
+  <h2><a href="TP4" class="nomTP" title="Le 19 décembre 2019">TP4</a></h2>
+  <h3>Initiation au PHP</h3>
+  <ul>
+    <li><a href="TP4/index.html">Rappels HTML</a></li>
+  </ul>
 </body>
 
 </html>
