@@ -31,7 +31,8 @@
   <h2><a href="TP4" class="nomTP" title="Le 19 décembre 2019">TP4</a></h2>
   <h3>Initiation au PHP</h3>
   <ul>
-    <li><a href="TP4/index.html">Rappels HTML</a></li>
+    <li><a href="TP4/rappel.html">Rappels HTML</a></li>
+    <li><a href="TP4/index.php">Page PHP</a></li>
   </ul>
 </body>
 
