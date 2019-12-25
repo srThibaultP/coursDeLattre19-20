@@ -1,6 +1,6 @@
-html {
+/*html {
   color: white;
-}
+}*/
 
 @font-face {
   font-family: 'oswald';
@@ -10,6 +10,40 @@ html {
 body {
   background-image: url("img/bgsaoexchronicle.jpg");
   font-family: oswald;
+}
+
+header{
+  border: 3px solid orange;
+  border-radius: 10px;
+  margin-bottom: inherit;
+}
+
+nav {
+  border: 3px solid red;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-right: 85%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+section {
+  border: 3px solid cornflowerblue;
+  border-radius: 10px;
+  margin-left: 350px;
+  margin-top: -465px;
+  margin-right: 10%;
+}
+
+footer {
+  border: 3px solid yellow;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  margin-top: inherit;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-align: center;
 }
 
 .nomTP {
@@ -27,6 +61,12 @@ h1 {
   color: rgb(64, 219, 253);
   font-size: 400%;
   text-align: center;
+}
+
+h3 {
+  color: white;
+  margin-left: +4%;
+  margin-top: -4%;
 }
 
 h4 {
