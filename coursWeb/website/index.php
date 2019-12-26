@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Liste des TP">
   <title>Index</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -13,11 +15,11 @@
   </header>
 
   <nav>
-    <h3>Liste des TP</h3>
-    <a href="#TP1"><p>TP1</p></a>
-    <a href="#TP2"><p>TP2</p></a>
-    <a href="#TP3"><p>TP3</p></a>
-    <a href="#TP4"><p>TP4</p></a>
+    <h3 class="navTitle">Liste des TP</h3>
+    <a href="#TP1"><p>TP1 - Apache</p></a>
+    <a href="#TP2"><p>TP2 - HTML</p></a>
+    <a href="#TP3"><p>TP3 - CSS</p></a>
+    <a href="#TP4"><p>TP4 - PHP</p></a>
   </nav>
 
   <section>
@@ -27,8 +29,8 @@
     <h2><a href="TP2" id="TP2" class="nomTP" title="Le 7 novembre 2019">TP2</a></h2>
     <h3>Initiation au HTML</h3>
     <ul>
-      <li><a href="TP2/exe1.html">Exe 1 : Emploi du temps</a></li>
-      <li><a href="TP2/exe2.html">Exe 2 : Curriculum vitæ</a></li>
+      <li><a href="TP2/exe1.html">Emploi du temps</a></li>
+      <li><a href="TP2/exe2.html">Curriculum vitæ</a></li>
     </ul>
 
     <h2><a href="TP3" id="TP3" class="nomTP" title="Le 14 novembre 2019">TP3</a></h2>
@@ -47,7 +49,11 @@
     </ul>
   </section>
   <footer>
-    <p>PECH Thibault BTSSN1</p>
+    <p>PECH Thibault BTSSN1 - <?php
+          $d = date("l d F Y");
+          $h = date("H:i:s");
+          print("$d $h");
+        ?></p>
   </footer>
 </body>
 
