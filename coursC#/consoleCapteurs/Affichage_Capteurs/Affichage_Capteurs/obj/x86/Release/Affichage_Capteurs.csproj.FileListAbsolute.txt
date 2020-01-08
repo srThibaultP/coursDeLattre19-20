@@ -1,8 +1,0 @@
-D:\PROGRAMATION\coursDeLattre19-20\coursC#\consoleCapteurs\Affichage_Capteurs\Affichage_Capteurs\bin\Release\Affichage_Capteurs.exe
-D:\PROGRAMATION\coursDeLattre19-20\coursC#\consoleCapteurs\Affichage_Capteurs\Affichage_Capteurs\bin\Release\Affichage_Capteurs.pdb
-D:\PROGRAMATION\coursDeLattre19-20\coursC#\consoleCapteurs\Affichage_Capteurs\Affichage_Capteurs\obj\x86\Release\Affichage_Capteurs.Form1.resources
-D:\PROGRAMATION\coursDeLattre19-20\coursC#\consoleCapteurs\Affichage_Capteurs\Affichage_Capteurs\obj\x86\Release\Affichage_Capteurs.Properties.Resources.resources
-D:\PROGRAMATION\coursDeLattre19-20\coursC#\consoleCapteurs\Affichage_Capteurs\Affichage_Capteurs\obj\x86\Release\Affichage_Capteurs.csproj.GenerateResource.Cache
-D:\PROGRAMATION\coursDeLattre19-20\coursC#\consoleCapteurs\Affichage_Capteurs\Affichage_Capteurs\obj\x86\Release\Affichage_Capteurs.exe
-D:\PROGRAMATION\coursDeLattre19-20\coursC#\consoleCapteurs\Affichage_Capteurs\Affichage_Capteurs\obj\x86\Release\Affichage_Capteurs.pdb
-D:\PROGRAMATION\coursDeLattre19-20\coursC#\consoleCapteurs\Affichage_Capteurs\Affichage_Capteurs\obj\x86\Release\Affichage_Capteurs.csprojAssemblyReference.cache
