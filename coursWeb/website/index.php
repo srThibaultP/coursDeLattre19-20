@@ -20,6 +20,7 @@
     <a href="#TP2"><p>TP2 - HTML</p></a>
     <a href="#TP3"><p>TP3 - CSS</p></a>
     <a href="#TP4"><p>TP4 - PHP</p></a>
+    <a href="#TP5"><p>TP5 - PHP²</p></a>
   </nav>
 
   <section>
@@ -48,6 +49,12 @@
       <li><a href="TP4/presentation.php">Présentation</a></li>
       <li><a href="TP4/calcul.php">Calcul</a></li>
       <li><a href="TP4/bissextile.php">Bissextile</a></li>
+    </ul>
+
+    <h2><a href="TP5" id="TP5" class="nomTP" title="Le 16 janvier 2020">TP5</a></h2>
+    <h3>Passage de variables en PHP</h3>
+    <ul>
+      <li><a href="TP5/affiche.php">Affiche</a></li>
     </ul>
   </section>
   <footer>
