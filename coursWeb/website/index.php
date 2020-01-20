@@ -46,6 +46,8 @@
       <li><a href="TP4/rappel.html">Rappels HTML</a></li>
       <li><a href="TP4/index.php">Page PHP</a></li>
       <li><a href="TP4/presentation.php">Présentation</a></li>
+      <li><a href="TP4/calcul.php">Calcul</a></li>
+      <li><a href="TP4/bissextile.php">Bissextile</a></li>
     </ul>
   </section>
   <footer>
