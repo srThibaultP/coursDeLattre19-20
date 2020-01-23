@@ -9,13 +9,18 @@ if(isset($annee)) {
     else {
       if(($annee % 4) == 0 || ($annee % 400) == 0) {
         echo "$annee est une année bissextile. <br/>";
+        echo "Les années ci dessous sont également bissextiles :<br/><br/>";
+        for($i = 0; 0 <= $annee ; $i++) {
+          --$annee;
+          if(($annee % 4) == 0 || ($annee % 400) == 0) {
+            echo "$annee est une année bissextile. <br/>";
+          }
+        }
       }
       else {
-        echo"$annee n'est pas une année bissextile. <br/> Par contre, les années ci dessous sont bissextiles :<br/><br/>";
-      }
-
-      if($annee >= 0 && $annee <= 3000) {
-        for(0 <= $annee) {
+        echo "$annee n'est pas une année bissextile.<br/>";
+        echo "Les années ci dessous sont bissextiles :<br/><br/>";
+        for($i = 0; 0 <= $annee ; $i++) {
           --$annee;
           if(($annee % 4) == 0 || ($annee % 400) == 0) {
             echo "$annee est une année bissextile. <br/>";
