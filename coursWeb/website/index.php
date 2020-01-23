@@ -54,7 +54,8 @@
     <h2><a href="TP5" id="TP5" class="nomTP" title="Le 16 janvier 2020">TP5</a></h2>
     <h3>Passage de variables en PHP</h3>
     <ul>
-      <li><a href="TP5/affiche.php">Affiche</a></li>
+      <li><a href="TP5/affiche.php?an=2020">Affiche</a></li>
+      <li><a href="TP5/calcul.php">Calcul</a></li>
     </ul>
   </section>
   <footer>
