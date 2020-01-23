@@ -7,11 +7,14 @@ if(isset($an)) {
       echo "$an n'est pas une année";
     }
     else {
-      echo "C'est l'année $an";  
+      echo "C'est l'année $an";
     }
   }
   else {
     echo "$an n'est pas une année";
   }
+}
+else {
+  echo "Veuillez insérer une année.";
 }
  ?>
