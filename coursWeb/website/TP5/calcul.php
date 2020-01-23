@@ -12,30 +12,30 @@ if(isset($valeur1, $valeur2, $operation) && is_numeric($valeur1) && is_numeric($
     case 'addition':
     $resultat = $valeur1 + $valeur2;
     echo "$valeur1 + $valeur2 = $resultat";
-      break;
+    break;
 
     case 'soustraction':
     $resultat = $valeur1 - $valeur2;
     echo "$valeur1 - $valeur2 = $resultat";
-      break;
+    break;
 
     case 'multiplication':
     $resultat = $valeur1 * $valeur2;
     echo "$valeur1 * $valeur2 = $resultat";
-      break;
+    break;
 
     case 'division':
     $resultat = $valeur1 / $valeur2;
     echo "$valeur1 / $valeur2 = $resultat";
-      break;
+    break;
 
     default:
-      echo "Opérateurs disponibles : addition, soustraction, multiplication et division";
-      break;
+    echo "Opérateurs disponibles : addition, soustraction, multiplication et division";
+    break;
   }
 }
 else {
   echo "Insérer des valeurs (valeur1, valeur2, operation)<br/>";
   echo "Opérateurs disponibles : addition, soustraction, multiplication et division";
 }
- ?>
+?>
