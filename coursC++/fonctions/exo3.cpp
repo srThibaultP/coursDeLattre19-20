@@ -32,6 +32,5 @@ int bonjourOne(int i) {
   for(int j(0); j<i; ++j) {
     cout << "Bonjour" << endl;
   }
-  cout << "1" << endl;
   return 1;
 }
