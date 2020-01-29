@@ -14,8 +14,9 @@ int main() {
 }
 
 int echange(double& val1, double& val2) {
-  double i(0);
-  i = val1;
+  //double i(0);
+  double i(val1);
+  //i = val1;
   //cout << "******Valeur 1 = " << val1 << " Valeur 2 = " << val2 << "i=" <<i<<endl;
 
   val1 = val2;
