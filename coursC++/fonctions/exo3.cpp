@@ -1,34 +1,27 @@
 #include <iostream>
 using namespace std;
 
-int bonjourOff();
-int bonjourX(int i);
-int bonjourOne(int i);
+void affiche();
+void affiche(int i);
+int affiche1(int i);
 
 int main() {
-  int choix;
-  bonjourOff();
-  cout << "Choisir une valeur : ";
-  cin >> choix;
-  bonjourX(choix);
-  bonjourOne(choix);
-  return 0;
+  affiche();
+  affiche(3);
+  affiche1(2);
 }
 
-int bonjourOff() {
+void affiche() {
   cout << "Bonjour" << endl;
-  return 0;
 }
 
-int bonjourX(int i) {
+void affiche(int i) {
   for(int j(0); j<i; ++j) {
     cout << "Bonjour" << endl;
   }
-  cout << endl;
-  return 0;
 }
 
-int bonjourOne(int i) {
+int affiche1(int i) {
   for(int j(0); j<i; ++j) {
     cout << "Bonjour" << endl;
   }
