@@ -63,7 +63,7 @@
     <h2><a href="TP6" id="TP6" class="nomTP" title="Le 23 janvier 2020">TP6</a></h2>
     <h3>Formulaires en PHP</h3>
     <ul>
-      <li><a href="TP6/index.html">Nom</a></li>
+      <li><a href="TP6/index.php">Index TP6</a></li>
   </section>
   <footer>
     <p>PECH Thibault BTSSN1 - <?php
