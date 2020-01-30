@@ -1,30 +1,30 @@
 <?php
 $nom = $_POST['nom'];
 
-$ip1 = $_POST['ip1'];
-$ip2 = $_POST['ip2'];
-$ip3 = $_POST['ip3'];
-$ip4 = $_POST['ip4'];
+$AdresseIP1 = $_POST['ip1'];
+$AdresseIP2 = $_POST['ip2'];
+$AdresseIP3 = $_POST['ip3'];
+$AdresseIP4 = $_POST['ip4'];
 
-$ma1 = $_POST['ma1'];
-$ma2 = $_POST['ma2'];
-$ma3 = $_POST['ma3'];
-$ma4 = $_POST['ma4'];
+$MasqueDSR1 = $_POST['ma1'];
+$MasqueDSR2 = $_POST['ma2'];
+$MasqueDSR3 = $_POST['ma3'];
+$MasqueDSR4 = $_POST['ma4'];
 
-if (isset($ip1) && isset($ip2) && isset($ip3) && isset($ip4) && isset($ma1) && isset($ma2) && isset($ma3) && isset($ma4)) {
-  if (is_numeric($ip1) && isset($ip2) && isset($ip3) && isset($ip4) && isset($ma1) && isset($ma2) && isset($ma3) && isset($ma4)) {
-    $ip = "$ip1.$ip2.$ip3.$ip4";
-    $ma = "$ma1.$ma2.$ma3.$ma4";
+if (isset($AdresseIP1) && isset($AdresseIP2) && isset($AdresseIP3) && isset($AdresseIP4) && isset($MasqueDSR1) && isset($MasqueDSR2) && isset($MasqueDSR3) && isset($MasqueDSR4)) {
+  if (is_numeric($AdresseIP1) && isset($AdresseIP2) && isset($AdresseIP3) && isset($AdresseIP4) && isset($MasqueDSR1) && isset($MasqueDSR2) && isset($MasqueDSR3) && isset($MasqueDSR4)) {
+    $AdresseIP = "$AdresseIP1.$AdresseIP2.$AdresseIP3.$AdresseIP4";
+    $MasqueDSR = "$MasqueDSR1.$MasqueDSR2.$MasqueDSR3.$MasqueDSR4";
 
-    $Bip = decbin(ip2long($ip));                                                //Conversion de l'IP en entier (X*255^3+X*255^2+X*255^1+X*255^0) puis en binaire
-    $Bma = decbin(ip2long($ma));                                                //Idem
-    $Bre = $Bip & $Bma                                                          //ET logique entre l'IP et le masque
-    $Ere = bindec($Bre);                                                        //Conversion binaire vers entier
-    $re = long2ip($Ere);                                                        //Conversion entier vers IP
-    $Fre = long2ip($Ere+1);
-    $di = $Bre
-    $Lre = long2ip($Ere-1);
-
+    $BinaryIP = str_pad(decbin(ip2long($AdresseIP)), 32, 0, STR_PAD_LEFT);                                    //Conversion de l'IP en entier (X*255^3+X*255^2+X*255^1+X*255^0) puis en binaire
+    $BinaryMasqueDSR = str_pad(decbin(ip2long($MasqueDSR)), 32, 0, STR_PAD_LEFT);                             //Conversion entier vers binaire
+    $BinaryAdresseReseau = str_pad($BinaryIP & $BinaryMasqueDSR, 32, 0, STR_PAD_LEFT);                        //ET logique entre l'IP et le masque = Adresse réseau (binaire)
+    $ReverseMasqueDSR = ~ip2long($MasqueDSR);
+    $EntierAdresseReseau = bindec($BinaryAdresseReseau);                        //Conversion binaire vers entier
+    $DefaultAdresseReseau = long2ip($EntierAdresseReseau);                      //Conversion entier vers IP
+    $FirstAdresseReseau = long2ip($EntierAdresseReseau+1);
+    $LastAdresseReseau = "MDRSAMARCHEPAS-1";
+    echo "$ReverseMasqueDSR";
   }
 }
  ?>
@@ -47,7 +47,7 @@ if (isset($ip1) && isset($ip2) && isset($ip3) && isset($ip4) && isset($ma1) && i
     <p> <?php if (isset($nom)) {
       echo "Bonjour $nom !";
     } ?> </p>
-    <?php if (isset($ip) && isset($ma) && isset($re)) {
+    <?php if (isset($AdresseIP) && isset($MasqueDSR) && isset($DefaultAdresseReseau)) {
       echo "
     <table border=black>
       <tr>
@@ -59,11 +59,11 @@ if (isset($ip1) && isset($ip2) && isset($ip3) && isset($ip4) && isset($ma1) && i
         <th>Classe de l'adresse</th>
       </tr>
       <tr>
-        <th>$ip</th>
-        <th>$ma</th>
-        <th>$re</th>
-        <th>$Fre</th>
-        <th>$Lre</th>
+        <th>$AdresseIP</th>
+        <th>$MasqueDSR</th>
+        <th>$DefaultAdresseReseau</th>
+        <th>$FirstAdresseReseau</th>
+        <th>$LastAdresseReseau</th>
         <th></th>
       </tr>
       ";}?>
