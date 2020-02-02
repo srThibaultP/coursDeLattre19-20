@@ -19,9 +19,9 @@
     <a href="#TP1"><p>TP1 - Apache</p></a>
     <a href="#TP2"><p>TP2 - HTML</p></a>
     <a href="#TP3"><p>TP3 - CSS</p></a>
-    <a href="#TP4"><p>TP4 - PHP</p></a>
-    <a href="#TP5"><p>TP5 - PHP2</p></a>
-    <a href="#TP6"><p>TP6 - PHP3</p></a>
+    <a href="#TP4" class="newTP"><p>TP4 - PHP</p></a>
+    <a href="#TP5" class="newTP"><p>TP5 - PHP2</p></a>
+    <a href="#TP6" class="newTP"><p>TP6 - PHP3</p></a>
   </nav>
 
   <section>
@@ -63,7 +63,7 @@
     <h2><a href="TP6" id="TP6" class="nomTP" title="Le 23 janvier 2020">TP6</a></h2>
     <h3>Formulaires en PHP</h3>
     <ul>
-      <li><a href="TP6/index.php">Index TP6</a></li>
+      <li><a href="TP6/index.php">Page d'accueil</a></li>
   </section>
   <footer>
     <p>PECH Thibault BTSSN1 - <?php

@@ -18,27 +18,18 @@ nav {
   border-left: 1px;
   border-top: 1px;
   font-size: 20px;
-  margin-right: 90%;
+  margin-right: 91%;
 
 }
 
 section {
   margin-left: 14%;
-  margin-top: -14%;
+  margin-top: -20%;
 }
 
 footer {
   color: firebrick;
   font-size: 20px;
-  text-align: center;
-}
-
-.nomTP {
-  color: rgb(63, 170, 208);
-  font-size: 150%;
-}
-
-.navTitle {
   text-align: center;
 }
 
@@ -80,4 +71,17 @@ li {
 ::-webkit-scrollbar-thumb{
   background: linear-gradient(125deg,#3498db,#34495e);
   border-radius: 10px;
+}
+
+.newTP {
+  color: rgb(46, 204, 113);
+}
+
+.nomTP {
+  color: rgb(63, 170, 208);
+  font-size: 150%;
+}
+
+.navTitle {
+  text-align: center;
 }
