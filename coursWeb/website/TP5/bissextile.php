@@ -8,22 +8,22 @@ if(isset($annee)) {                                                             
     }
     else {
       if(($annee % 4) == 0 || ($annee % 400) == 0) {                            // Calcul de l'année bissextile (cf TP4/bissextile.php)
-        echo "$annee est une année bissextile. <br/>";
-        echo "Les années ci dessous sont également bissextiles :<br/><br/>";
+        echo "$annee est une année bissextile. <br/><br/>";
+        echo "Les années ci dessous sont également bissextiles :<br/>";
         for($i = 0; 0 <= $annee ; $i++) {                                       // Compteur pour aller jusqu'a l'an zero
           --$annee;
           if(($annee % 4) == 0 || ($annee % 400) == 0) {                        // Même calcul pour aller jusqu'a l'an zero
-            echo "$annee est une année bissextile. <br/>";
+            echo "$annee, ";
           }
         }
       }
       else {
-        echo "$annee n'est pas une année bissextile.<br/>";
-        echo "Les années ci dessous sont bissextiles :<br/><br/>";
+        echo "$annee n'est pas une année bissextile.<br/><br/>";
+        echo "Les années ci dessous sont bissextiles :<br/>";
         for($i = 0; 0 <= $annee ; $i++) {
           --$annee;
           if(($annee % 4) == 0 || ($annee % 400) == 0) {
-            echo "$annee est une année bissextile. <br/>";
+            echo "$annee, ";
           }
         }
       }
@@ -37,3 +37,13 @@ else {
   echo "Veuillez insérer une année.";                                           // Message de base
 }
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bissextile PHP</title>
+</head>
+<body>
+  <a href="../index.php"><img src="/img/back.png" width="50" height="50" align="right"/></a>
+</body>
+</html>

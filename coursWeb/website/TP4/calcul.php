@@ -18,3 +18,14 @@ function calcul($x, $o, $y) {
 }
 calcul("14", "*", "45");
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fonction Calcul</title>
+</head>
+<body>
+  <a href="../index.php"><img src="/img/back.png" width="50" height="50" align="right"/></a>
+  <p>Le calcul est modifiable dans le code.</p>
+</body>
+</html>

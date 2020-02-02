@@ -12,3 +12,14 @@ function bissextile($a) {
 }
 bissextile("2028");
  ?>
+ 
+ <!DOCTYPE html>
+ <html>
+ <head>
+   <title>Fonction Bissextile</title>
+ </head>
+ <body>
+   <a href="../index.php"><img src="/img/back.png" width="50" height="50" align="right"/></a>
+   <p>L'année est modifiable dans le code.</p>
+ </body>
+ </html>

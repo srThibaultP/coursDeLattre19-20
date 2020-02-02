@@ -39,3 +39,15 @@ else {
   echo "Opérateurs disponibles : addition, soustraction, multiplication et division";
 }
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calcul PHP</title>
+</head>
+<body>
+  <a href="../index.php"><img src="/img/back.png" width="50" height="50" align="right"/></a>
+  <p>Valeurs modifiables : "valeur1", "valeur2".<br/></p>
+  <p>"operation" demande les opérateurs suivants: addition, soustraction, multiplication et division<br/></p>
+</body>
+</html>

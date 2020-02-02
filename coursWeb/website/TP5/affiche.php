@@ -15,6 +15,16 @@ if(isset($an)) {                                                                
   }
 }
 else {
-  echo "Veuillez insérer une année. (an)";                                           // Message de base
+  echo "Veuillez insérer une année. (?an)";                                     // Message de base
 }
  ?>
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+   <title>Affiche PHP</title>
+ </head>
+ <body>
+   <a href="../index.php"><img src="/img/back.png" width="50" height="50" align="right"/></a>
+ </body>
+ </html>
