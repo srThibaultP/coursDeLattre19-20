@@ -17,18 +17,21 @@
       <input type="text" name="nom">
       <button type="submit">Valider</button>
     </form>
-
+    <hr/>
     <form action="traitement.php" method="post">
-      <p>Adresse IP</p>
+      <p>Adresse IP
       <input type="number" name="ip1" maxlength="3" min="1" max="255">
       <input type="number" name="ip2" maxlength="3" min="0" max="255">
       <input type="number" name="ip3" maxlength="3" min="0" max="255">
       <input type="number" name="ip4" maxlength="3" min="0" max="254">
-      <p>Masque de sous réseau</p>
+      </p>
+      <p>Masque de sous réseau
       <input type="number" name="ma1" maxlength="3" min="0" max="255">
       <input type="number" name="ma2" maxlength="3" min="0" max="255">
       <input type="number" name="ma3" maxlength="3" min="0" max="255">
       <input type="number" name="ma4" maxlength="3" min="0" max="255">
+      </p>
+      <p>Afficher les nombres binaires<input type="checkbox" name="debug"></p>
       <button type="submit">Valider</button>
     </form>
 

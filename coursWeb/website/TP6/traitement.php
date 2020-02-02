@@ -1,5 +1,6 @@
 <?php
 $nom = $_POST['nom'];                                                           //Récupération du nom (Partie 1)
+$DEBUG = $_POST['debug'];
 
 $AdresseIP1 = $_POST['ip1'];                                                    //Récupération de l'adresse IP (en 4 partie)
 $AdresseIP2 = $_POST['ip2'];
@@ -58,6 +59,18 @@ if (isset($AdresseIP1) && isset($AdresseIP2) && isset($AdresseIP3) && isset($Adr
     }
   }
 }
+
+if (isset($DEBUG)) {
+  $DEBUGIP1=substr_replace(str_pad(decbin($AdresseIP1), 8, 0, STR_PAD_LEFT), ".", 4, 0);  //Conversion IP vers binaire, ajout de 0 pour former un octet, séparation de l'octet par un point
+  $DEBUGIP2=substr_replace(str_pad(decbin($AdresseIP2), 8, 0, STR_PAD_LEFT), ".", 4, 0);
+  $DEBUGIP3=substr_replace(str_pad(decbin($AdresseIP3), 8, 0, STR_PAD_LEFT), ".", 4, 0);
+  $DEBUGIP4=substr_replace(str_pad(decbin($AdresseIP4), 8, 0, STR_PAD_LEFT), ".", 4, 0);
+
+  $DEBUGMDSR1=substr_replace(str_pad(decbin($MasqueDSR1), 8, 0, STR_PAD_LEFT), ".", 4, 0);
+  $DEBUGMDSR2=substr_replace(str_pad(decbin($MasqueDSR2), 8, 0, STR_PAD_LEFT), ".", 4, 0);
+  $DEBUGMDSR3=substr_replace(str_pad(decbin($MasqueDSR3), 8, 0, STR_PAD_LEFT), ".", 4, 0);
+  $DEBUGMDSR4=substr_replace(str_pad(decbin($MasqueDSR4), 8, 0, STR_PAD_LEFT), ".", 4, 0);
+}
 ?>
 
 
@@ -97,7 +110,40 @@ if (isset($AdresseIP1) && isset($AdresseIP2) && isset($AdresseIP3) && isset($Adr
     <th>$LastAdresseReseau</th>
     <th>$Class</th>
     </tr>
-    ";}?>
+    </table>
+    <br/>
+    ";}
+    if (isset($DEBUG)) {
+      echo "
+      <table border=black>
+      <tr>
+      <th>IP 1</th>
+      <th>IP 2</th>
+      <th>IP 3</th>
+      <th>IP 4</th>
+      </tr>
+      <th>$DEBUGIP1</th>
+      <th>$DEBUGIP2</th>
+      <th>$DEBUGIP3</th>
+      <th>$DEBUGIP4</th>
+      </tr>
+      </table>
+      <table border=black>
+      <tr>
+      <th>$DEBUGMDSR1</th>
+      <th>$DEBUGMDSR2</th>
+      <th>$DEBUGMDSR3</th>
+      <th>$DEBUGMDSR4</th>
+      </tr>
+      <th>MDSR 1</th>
+      <th>MDSR 2</th>
+      <th>MDSR 3</th>
+      <th>MDSR 4</th>
+      </tr>
+      </table>
+      <p>IP = Adresse IP | MDSR = Masque de sous réseau</p>
+      ";
+    } ?>
     <a href="../TP6/index.php"><img src="/img/back.png" width="50" height="50" align="right"/></a>
   </body>
   </html>
