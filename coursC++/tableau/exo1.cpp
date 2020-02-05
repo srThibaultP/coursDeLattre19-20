@@ -10,10 +10,10 @@ int main() {
 }
 
 void tableau() {
-  int j(1);
+  int j(0);
   vector < int > entier(3);
-  for (size_t i = 1; i < entier.size() + j; ++i) {
-    cout << "Entrez entier numero " << i << " : ";
+  for (size_t i = 0; i < entier.size() + j; ++i) {
+    cout << "Entrez entier numero " << i+1 << " : ";
     cin >> entier[i];
     if(entier[i] == 0) {
       //cout << "Supression du tableau" << endl;
@@ -27,7 +27,7 @@ void tableau() {
       entier.pop_back();
     }
   }
-  for (size_t i = 1; i < entier.size() + j; i++) {
+  for (size_t i = 0; i < entier.size() + j; i++) {
     cout<<entier[i]<<" ";
   }
 }
