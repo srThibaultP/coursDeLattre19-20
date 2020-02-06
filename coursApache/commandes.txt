@@ -10,7 +10,7 @@ Localisation du dossier par défaut :
 
 Créer un hôte virtuel :
 Dans un terminal :
-cd/var/www
+cd /var/www
 sudo mkdir btssn1-22
 sudo chmod 777 btssn1-22
 
@@ -28,7 +28,7 @@ sudo a2ensite btssn1-22.conf
 sudo systemctl restart apache2
 
 Aller dans le fichier hosts :
-etc/
+cd /etc
 Dans le fichier "hosts" :
 Ajouter la ligne :
 127.0.0.1 btssn1-22.org
