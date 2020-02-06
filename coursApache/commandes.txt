@@ -1,5 +1,6 @@
-Installer apache :
+Installer apache et php:
 sudo apt-get install apache2
+sudo apt install libapache2-mod-php
 
 Démarrer et arrêter apache :
 Démarrer : /etc/init.d/apache2 start
@@ -29,6 +30,10 @@ sudo systemctl restart apache2
 
 Aller dans le fichier hosts :
 cd /etc
+
 Dans le fichier "hosts" :
 Ajouter la ligne :
 127.0.0.1 btssn1-22.org
+
+Désativer le localhost :
+sudo a2dissite 000-default.conf
