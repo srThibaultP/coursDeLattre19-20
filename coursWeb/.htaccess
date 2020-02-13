@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "Acces au site web de Thibault Pech"
+AuthUserFile /home/pi/.htpasswd
+
+<Files "index.php">
+  Require valid-user
+</Files>

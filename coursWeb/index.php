@@ -19,9 +19,10 @@
     <a href="#TP1"><p>TP1 - Apache</p></a>
     <a href="#TP2"><p>TP2 - HTML</p></a>
     <a href="#TP3"><p>TP3 - CSS</p></a>
-    <a href="#TP4" class="newTP"><p>TP4 - PHP</p></a>
-    <a href="#TP5" class="newTP"><p>TP5 - PHP2</p></a>
-    <a href="#TP6" class="newTP"><p>TP6 - PHP3</p></a>
+    <a href="#TP4"><p>TP4 - PHP</p></a>
+    <a href="#TP5"><p>TP5 - PHP2</p></a>
+    <a href="#TP6"><p>TP6 - PHP3</p></a>
+    <a href="#TP7" class="newTP"><p>TP7 - Raspberry Pi </p></a>
   </nav>
 
   <section>
@@ -64,6 +65,11 @@
     <h3>Formulaires en PHP</h3>
     <ul>
       <li><a href="TP6/index.php">Page d'accueil</a></li>
+    </ul>
+
+    <h2><a href="TP7" id="TP7" class="nomTP" title="Le 6 février 2020">TP7</a></h2>
+    <h3>Installation d'un Raspberry Pi 4</h3>
+
   </section>
   <footer>
     <p>PECH Thibault BTSSN1 - <?php
