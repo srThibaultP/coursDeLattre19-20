@@ -14,10 +14,8 @@ Complexe produitComplexe(Complexe z1, Complexe z2);
 int main() {
   Complexe nbr1({1.0,-1.0});
   Complexe nbr2({1.0,1.0});
-  Complexe nbr3(additionComplexe(nbr1, nbr2));
   affichageComplexe(nbr1);
   affichageComplexe(nbr2);
-  affichageComplexe(nbr3);
   affichageComplexe(additionComplexe(nbr1,nbr2));
   affichageComplexe(soustractionComplexe(nbr1,nbr2));
   affichageComplexe(produitComplexe(nbr1,nbr2));
