@@ -21,8 +21,8 @@ int main() {
     ++ptab;
   }
   cout << endl;
-  //*pmaxi = *pmini = *ptab;
-  maxi = mini = tab[0];
+  *pmaxi = *pmini = *ptab;
+  //maxi = mini = tab[0];
   ptab = tab;
   for (int i(0); i<Nombre; ++i) {
     if (*ptab>*pmaxi) *pmaxi=*ptab;
